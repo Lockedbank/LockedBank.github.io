@@ -6,15 +6,60 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://LockedBank.github.io">
-  <title>Archives | LockedBank&#39;s Blog</title>
+  <title>星辰工作室Devops招新笔试题解答 | LockedBank&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LockedBank&#39;s Blog">
-<meta property="og:url" content="https://lockedbank.github.io/archives/index.html">
+  <meta name="description" content="By：李佳杭 （tip1：为了体现我在作答招新题过程中的思考 我的解答包含了题目解答以及对题目文档的注解和一些回答 并为了方便阅读 我的标题与招新文档标题一一对应 tip2:由于我是使用电脑编写的解答，没有考虑到手机上查看分列会显示不下，所以可能在手机上阅读时会发生格式错乱，带来不便请谅解 ） 一、写在前面1.1 服务器租借之前在搬瓦工租（出）借（血）了一个一年期的VPS 安装了Debian 配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="星辰工作室Devops招新笔试题解答">
+<meta property="og:url" content="https://lockedbank.github.io/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/index.html">
 <meta property="og:site_name" content="LockedBank&#39;s Blog">
+<meta property="og:description" content="By：李佳杭 （tip1：为了体现我在作答招新题过程中的思考 我的解答包含了题目解答以及对题目文档的注解和一些回答 并为了方便阅读 我的标题与招新文档标题一一对应 tip2:由于我是使用电脑编写的解答，没有考虑到手机上查看分列会显示不下，所以可能在手机上阅读时会发生格式错乱，带来不便请谅解 ） 一、写在前面1.1 服务器租借之前在搬瓦工租（出）借（血）了一个一年期的VPS 安装了Debian 配置">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTA3YjUwYjJmZDY1MjE4ZjY4MjUxMzIyYjhhZGZjOThfVjJwajZ4MGpXT1dJT2tBd1FwWTdYNW1CREFhazJXT1BfVG9rZW46Ym94Y25KYTBUOWZFRDYzQjNIME94dzlxTXNkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MWZmYWRkNmZmZWQ2MGU0MjRjM2NiZjAzYWE1OTg5MTFfVEZDS1JNWERQeUZQMmlCdnA2TXNpTkxTcjU5bUlmTnVfVG9rZW46Ym94Y25XVjhTVlRpZlN1TFFRTnpWQnBJRXhoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MzcwNjVlZjgxZmJmNWM0MjRiOTg2ZDU3MjgwYmZmNmRfZUNQZWZxQmJsbjVTd3pFVEZNWEMweEhra2ZGMFk0OWlfVG9rZW46Ym94Y25DZ0NJRkxkQzdPTExDbkQ3dkJqeUJnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjI0ZDJjNDY2YTdiZjczYzc0YzRjMmM1M2JmMTcyYTFfbXhYVE1pSnZ1RVZ2MnZtWGFlZGV1UnptS0FET3NvT01fVG9rZW46Ym94Y25TbUhnNjczVWE4bVpKT1ZFYkJHOFFkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=M2U2ZTRiYmUwMjk4NGU3NGM0ZDNmYjY5MTJiN2M1MDZfR1NjVDA5NUk0RXNabHExcnhrd1MzZUxTczRsQ0xSTHlfVG9rZW46Ym94Y25oUDRtVkNhWlVBTjZQSEpoQ3dtbndjXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2RkM2I4YmJiYTI5MmJkM2U3NmM3NzIxMmM4ZGJjOGVfMFIxdWFrUkphNmZRbG9ISVpDeWQxMUpWeWtNc1lLWENfVG9rZW46Ym94Y25Sc2lPM3JFTXQyTEN2WXRpd1RNVVJnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NzlmOTMzNTExNGU5MDgxZTJjZGNiZTkzZjU3Zjg4MTVfUFFiSXB1Q1o3SGRQZUNsZ2t0ZWNxVU9vYjhGNXEzOXZfVG9rZW46Ym94Y25OVlNxZmszZlJSTGJqemIxZUNaV2tiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGJmODhmZjllOGJmNmY5OWRmODM0ODk0MDg2Y2YyMTlfY0xFMzk5SFpva0hSTk14TXlvVGNMUU5adnhib2NKOFlfVG9rZW46Ym94Y25kNTVVOUNnZTZVeVp1UnBMeGZ2Q1lvXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MmZhYTcxMjJiZDVkM2E4ZmQ2MTMzOWYyYzg3MzhkYThfTndNYm9tYlZ6dHNjYkJxcmRpV252OEN5dUpZWjRlVXpfVG9rZW46Ym94Y25XNVdxN1daRmZuczh1MkkyWjlpVzBkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NTI1OTkyYzg1YjVkMTY1MjIxNTllYWFkZDYyYjljN2FfUWVGZTdIYzg2dkJVYk05YmxuUEhRSWtRZFVhVXNDOEtfVG9rZW46Ym94Y25SdzJMMUduaXR4M1VMUDhpRlRoNEJmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjcyOTg0MDBlMzQ5NjE0NGJiMTY4MThjOTAwNjhjMzJfV0V6dXFsZDNCMXloMDRuWkpqNWhsamNVcXRHbk11TDZfVG9rZW46Ym94Y25VOFRRVUJZbGFHajR3S0dFR3FXcXJlXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MGY5NDgyMjU3YjBhMWQyZDc4MWQ2YTMwMTVkYzM4YzdfbVlNbFdqSmxXTHhyU2dIaXltMDgwWlVaV2JYNTR4M2xfVG9rZW46Ym94Y25ad0JreHBHbHJoMG16cmJjWU9JRUdkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OTI1OTI4NGYwYWQ0M2NiMzMzYWVhNTIxMjc5MTFiZmRfV1BlaTVHUk5VeDFiTE1Nd2pnWFBySXdCNTU2eG1QYWVfVG9rZW46Ym94Y25DNkQ1NWpOWml3U1NqekI2OXltZHdnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YzBmNzdjNWQwZTBkNTFkZjEyYTAyNjM0ZTE1NGY4NGFfZ25MM0FGQjdiak5qQzBzcHJWbExhVjk5U0t4a3NhTEZfVG9rZW46Ym94Y251ZUo5cTc2MkNmVXc5VmNrU2FhZ0VoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGNjYWQxYTBhZDA3MmYyNTBhZDU4Yzc1YmI2MDIyYWZfRjFiQ3BUVHR5TVh5ZklEREYzNkpqOVRTNENtUGthemRfVG9rZW46Ym94Y25yR3hTZk9CVENvUDhyWHVLd1MzZVFoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YTYxNzExMTY3ZGI2ZWU3MmNhOGNhY2JmZDVkYjk2MzJfQ2g3TVIzTmJnMlFTNzlUVnFwR2RCQnZPSGxxelg2YTRfVG9rZW46Ym94Y24yVDg3aVRTZzNtSDZqUlg3WXh5T0JiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NTRlOTU2YWVjYTI4MmU0NWZmMjhjZWQ2Y2E1ZmM0M2RfNWxGbVZ0T3FoSWtNZTIxRFVSU3JEMnRkZTlsQjlwcWFfVG9rZW46Ym94Y25uYm54a0RqZ2hkU3ZlWWllTmx2Z2pjXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGNkNzY1MDlmZGNmNTMxMWZkNjk0MjExOGM1N2QzNzBfaUxuNndmaE1FcnhBbW9WaHE3WTRldEZTcDJaaURkQWdfVG9rZW46Ym94Y242VG9uSFQzaTdSOXRkZmY5OVhnZUVmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NWNhZDY2ODJmYzkzYjU0MDkzN2Q4OWJmYzA0OGJhMDhfZGFCMnl2R0RkN0s0OXdTUEhOOEFJOGNMMExRSGswdlhfVG9rZW46Ym94Y24yQ0xxT2pDelpkTGczenoyOHN5Sk1iXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YzMxZjU4YmI2YzdiZTM4MDc2Zjk0OGI1MzAwYmJlNzlfOEtkWlRrZWZWd3Jwb1JxWldwNkhveWI2dHpzMFAxNmVfVG9rZW46Ym94Y25jZVNvT0tkYmZoUUNrbjJlYUp2Njh5XzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NjZkZjY0YzYwZmZhMGZlNDkxOTBlZjU2ODAwZjFmYTZfdTVaQUNpemJ4WElOUXVGQWZXYVJMT21rUVZJS0pBTVVfVG9rZW46Ym94Y24zMGZZeUlxYmRwZlRFalZUWHJDMk5jXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDA5ZWRhMTllZGE1MjM4YTk1MWZmYmZkMWNmNWZkNjlfVFlVS2ZWQ2hjNE03bHZ0SW9mZldBN05wQnJleFJNZ2hfVG9rZW46Ym94Y25TRktqS29nSThWdWVHR3IwVXgyTkFiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NDNkOGVmMDg3YWViZTc1NjkyMGJmODkxYzJjNDZmYTVfZnZyWVpRd0JjM042VllJUEs4NWVKbGl5RmtOdU5uY3RfVG9rZW46Ym94Y25lSkFNVDIxUWdKdDNubU5lb3Zna0FjXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MjY1YTVjNDY4ZDg0NWRkYWRkMWY0OTJhNTVhYjFkMTdfaDlQUWxrdWRKTnVOc1MzcEtlNHhBcW9VaUhxSGdsRDdfVG9rZW46Ym94Y240MGhobGxrRVRDRE5PZUE5elp3YTgyXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=N2IyYzgxNzQzZjExNjE2MjczNGJlMGJjM2MyZjYwYTNfeG1zdFY4R0UxVkNCR1RyZUt6anlVVVMxOG9iTDRTRzlfVG9rZW46Ym94Y25YSHVnOUJSTFJTM3ZSTll2ZmI5RzBiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MWNiZjVkM2QyNWI2MzdhNTAxOGJkNDQ4YjM5NjMzNzFfWERGNlRVWnRrMGxUQ0tUaDRXaVJSTGtnQWJTYUY3U2VfVG9rZW46Ym94Y25SSEs0Tzg1cTZEa1RXR00xRVNFRHdoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OGVlNjllZTg0ZGY2NmQzNzdjNDEyN2M4NmM2MzY4ZGRfVXJzSDVON2Nna2ZESUlvYkp2RUlIVk1GeDVLT2tqTllfVG9rZW46Ym94Y25vWU5VVmVhdkwwSHpmdkMzYXZ2U0doXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OWE4ZDM4MWEzMzRhY2FmODY3ODg5NGUyMzA5M2YwMDFfNUIzWEtkTGpiWExFZFJTaGJIZHQ2VXk5eUx1WGRxVERfVG9rZW46Ym94Y25xdVAxRjJYR3hRSG95Rjdob1hQWHJmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YjIxODg3ZmQ0ZWZiZThlMTc4ODczMjE0NmZmYWZjOTJfRzdmaVRJeFhJQW1PZXp2UkpDQzZBa1hRVmhxMWQ4S2FfVG9rZW46Ym94Y25TUFNNbnBPUENkZlJLQ3FrTzdaTVRmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDgxODU5MWQ5MWUzYmEwZjNjZmEzZWJkOGI1NWEyYTNfSkZRNUk3TTdDUnpydm9ZYmV2ZEpiSkJscmlLRXVXOTVfVG9rZW46Ym94Y25CNWhzTnFRalVFc0NZa0pobzlqY3pmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OWExMDZmMTI5NmQwYWViY2E4Yjg2NDliZTM1YjliNWNfY3dHYnFYYzdjUm9RNUIwTlZuMURJZW1rZnJxVjRKalFfVG9rZW46Ym94Y25jbUZJQU9rdTZYY0NGRlVMRm81Vm9jXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NWU4NDA1MWExOTA0MzVlOGRkOGIzYmMwNDhiNjM0NjRfMmd1SVRRRXhpdGU5VkFsaXp3NTRBYkNuRXhFQlNmeVRfVG9rZW46Ym94Y25NS0tsZFBWR1NUOWVwOW8zNnJIdDZnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDU3YTMzNjIyZGU3MDQ3NjA4MzQyMTRhYjllMjc4ZjJfQmRaRWVMTHo5eDRBZ3RPclhtU21yM1dNY29CZFd0dllfVG9rZW46Ym94Y25RYU9QVW5Fd1hHWG5qNDF1TUFnREVnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YjBkODZlY2RlNWQ2YTZjOWExOGRmY2Y5MjdiN2ZhNTFfdjRGcXlJS0ZYSFprM0llVVROYklXMGhmS3laRlRRbnFfVG9rZW46Ym94Y25uU2RMYjdtQ1FoTlJkM0Q3YkJhWWdnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=M2Q4OTEyZjU2YTAxYTc3MzhhM2EwOTU3MjA5ODE2ZTRfWDhaSTBMNHlXdHZNU2dPQ2x1QzJiWFBNUk1xR0RJN05fVG9rZW46Ym94Y243emtDQW5idFVRTG8zck1hRXVaZzlDXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjJmN2NlNTVhMTE3ZDNjZDgzMjY2ZDAzZTY2M2UyOWZfZ2JWdHJlYTRHMGFwUm11Vk1MM0V0YW8zNFBOVnVFWEZfVG9rZW46Ym94Y25hWlZ3RVpkeVZBdVJod21ua2pNREJoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NjM2YjU3OTk5Y2M3NDVmZTA2ODNhYTM2NWRkOTI4NWZfOEpvbk9HcHdsTzliaVR2OGdrRDEwVGp1M0JkZFVTWWlfVG9rZW46Ym94Y25xQ3ROTE1FUmxXUG44bTk5VG8zNDllXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MjFmNjJjZjA3Yjk2OTAyMThjYjE5Y2QwNTM4NDk3MWZfNm5iWnIzZlNOdzBvNmdRT1d0R1RhcVdhczJGWnM5OTBfVG9rZW46Ym94Y25sNjc3OUJtYVptc0NxTVY4VU83WHBnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NWJiNWMxNzk3OGFiNzNmNGM4ZmE5ODU0MDUxNWRhNjhfcFZuNXJrdEpFWXNOSk1rSXg5Yml6WDhUQ29YZm5Fa1pfVG9rZW46Ym94Y24ySEIxNDNPenN5dk9nNUpqNkgzdGdiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=M2RlNWQxMGUyMjRlYmM5NmY5M2YzNzUwZDMyMGQxYTRfcnVlbUF6dFMxY09KVlBtRnFnbTlGUmNVQ3lIYU1zUldfVG9rZW46Ym94Y25aREVlcWcya3F5OWZ2VlhiWEZiQUVoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
+<meta property="article:published_time" content="2022-11-27T13:15:47.000Z">
+<meta property="article:modified_time" content="2022-11-27T13:16:17.998Z">
 <meta property="article:author" content="LockedBank">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTA3YjUwYjJmZDY1MjE4ZjY4MjUxMzIyYjhhZGZjOThfVjJwajZ4MGpXT1dJT2tBd1FwWTdYNW1CREFhazJXT1BfVG9rZW46Ym94Y25KYTBUOWZFRDYzQjNIME94dzlxTXNkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA">
   
     <link rel="alternative" href="/atom.xml" title="LockedBank&#39;s Blog" type="application/atom+xml">
   
@@ -150,103 +195,648 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-星辰工作室Devops招新笔试题解答" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      星辰工作室Devops招新笔试题解答
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/" class="archive-article-date">
+
+        
+        <a href="/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/" class="archive-article-date">
   	<time datetime="2022-11-27T13:15:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-11-27</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/">星辰工作室Devops招新笔试题解答</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>By：李佳杭</p>
+<p>（tip1：为了体现我在作答招新题过程中的思考 我的解答包含了<strong>题目解答</strong>以及对题目文档的<strong>注解</strong>和一些<strong>回答</strong> 并为了方便阅读 <strong>我的标题与招新文档标题一一对应</strong></p>
+<p>tip2:由于我是使用电脑编写的解答，没有考虑到手机上查看<strong>分列会显示不下</strong>，所以可能在手机上阅读时会发生格式错乱，带来不便请谅解 ）</p>
+<h1 id="一、写在前面"><a href="#一、写在前面" class="headerlink" title="一、写在前面"></a>一、写在前面</h1><h2 id="1-1-服务器租借"><a href="#1-1-服务器租借" class="headerlink" title="1.1 服务器租借"></a>1.1 服务器租借</h2><p>之前在搬瓦工租（出）借（血）了一个一年期的VPS 安装了Debian 配置了V2Ray拿来科学上网9月份被墙了之后换了一个IP并开了流量伪装 现在准备就拿来科学上网  后面计划租一个腾讯云的学生服务器来学习相关知识</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTA3YjUwYjJmZDY1MjE4ZjY4MjUxMzIyYjhhZGZjOThfVjJwajZ4MGpXT1dJT2tBd1FwWTdYNW1CREFhazJXT1BfVG9rZW46Ym94Y25KYTBUOWZFRDYzQjNIME94dzlxTXNkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<h2 id="1-2-Linux学习方式"><a href="#1-2-Linux学习方式" class="headerlink" title="1.2 Linux学习方式"></a>1.2 Linux学习方式</h2><p>我用的是苹果电脑 并且也在使用 Parallel虚拟机 同时开了Win11和Ubuntu 方便学习Linux</p>
+<h1 id="二、命令行入门"><a href="#二、命令行入门" class="headerlink" title="二、命令行入门"></a>二、命令行入门</h1><h2 id="2-1-常用命令"><a href="#2-1-常用命令" class="headerlink" title="2.1 常用命令"></a>2.1 常用命令</h2><p>ls cat cd find pwd 这些还是比较熟 也使用过vim 对Linux常用命令有一些基本了解 之后如果需要会继续学习更多的操作</p>
+<p>以下是题目要求尝试的案例：（截了一部分 虽然加密过 不会有人盗密码吧）</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MWZmYWRkNmZmZWQ2MGU0MjRjM2NiZjAzYWE1OTg5MTFfVEZDS1JNWERQeUZQMmlCdnA2TXNpTkxTcjU5bUlmTnVfVG9rZW46Ym94Y25XVjhTVlRpZlN1TFFRTnpWQnBJRXhoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MzcwNjVlZjgxZmJmNWM0MjRiOTg2ZDU3MjgwYmZmNmRfZUNQZWZxQmJsbjVTd3pFVEZNWEMweEhra2ZGMFk0OWlfVG9rZW46Ym94Y25DZ0NJRkxkQzdPTExDbkQ3dkJqeUJnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<h2 id="2-2-思考题：与图形界面相比，命令行有什么优势？"><a href="#2-2-思考题：与图形界面相比，命令行有什么优势？" class="headerlink" title="2.2 思考题：与图形界面相比，命令行有什么优势？"></a>2.2 思考题：与图形界面相比，命令行有什么优势？</h2><ul>
+<li><p>第一时间拿到这个问题 我首先想到的是</p>
+</li>
+<li><ul>
+<li><p>1、命令行少了很多图形化所需要的资源 使计算机效率得到提高</p>
+</li>
+<li><p>2、便于程序员写代码</p>
+</li>
+<li><p>Google一下之后 看到了更多 总结如下：</p>
+</li>
+<li><p>**1、编写程序高效 &#x2F;&#x2F;**全是命令行 便于写代码</p>
+</li>
+<li><p>**2、功能更加强大 &#x2F;&#x2F;**便于使用一些脚本 并且有一些工具</p>
+</li>
+<li><p>**3、只需要键盘就能操作 &#x2F;&#x2F;**键入命令代替鼠标、触控的操作</p>
+</li>
+<li><p>**4、运行效率高&#x2F;&#x2F;**命令行少了很多图形化所需要的资源 使计算机效率得到提高</p>
+</li>
+<li><p>**5、适合用于管理服务器 &#x2F;&#x2F;**远程连接变得更容易、避免操作出错和失误、直接读写并执行二进制</p>
+</li>
+<li><p>代码、程序的运行效率 高 Shell等工具编程调试很方便 没有那么多流氓软件不会影响到服务器的</p>
+</li>
+<li><p>整体稳定性</p>
+</li>
+<li><p>**6、稳定性好 &#x2F;&#x2F;**使用图形化界面加载一些图形资源的时候很可能会卡顿乃至崩溃</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="三、安装软件"><a href="#三、安装软件" class="headerlink" title="三、安装软件"></a>三、安装软件</h1><p>之前使用过Homebrew安装dirmap、dirsearch等一些扫描工具</p>
+<h2 id="3-1-以安装nginx为例"><a href="#3-1-以安装nginx为例" class="headerlink" title="3.1 以安装nginx为例"></a>3.1 以安装nginx为例</h2><p>用我的MacOS安装nginx试验：</p>
+<p>安装nginx：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjI0ZDJjNDY2YTdiZjczYzc0YzRjMmM1M2JmMTcyYTFfbXhYVE1pSnZ1RVZ2MnZtWGFlZGV1UnptS0FET3NvT01fVG9rZW46Ym94Y25TbUhnNjczVWE4bVpKT1ZFYkJHOFFkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>安装成功，打开nginx：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=M2U2ZTRiYmUwMjk4NGU3NGM0ZDNmYjY5MTJiN2M1MDZfR1NjVDA5NUk0RXNabHExcnhrd1MzZUxTczRsQ0xSTHlfVG9rZW46Ym94Y25oUDRtVkNhWlVBTjZQSEpoQ3dtbndjXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>成功打开nginx，使用Chrome打开本地IP：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2RkM2I4YmJiYTI5MmJkM2U3NmM3NzIxMmM4ZGJjOGVfMFIxdWFrUkphNmZRbG9ISVpDeWQxMUpWeWtNc1lLWENfVG9rZW46Ym94Y25Sc2lPM3JFTXQyTEN2WXRpd1RNVVJnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>神奇的事情发生了！</p>
+<h2 id="3-2-实践题：在你的操作系统上安装docker"><a href="#3-2-实践题：在你的操作系统上安装docker" class="headerlink" title="3.2 实践题：在你的操作系统上安装docker"></a>3.2 实践题：在你的操作系统上安装docker</h2><p>在我的MacOS上安装docker：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NzlmOTMzNTExNGU5MDgxZTJjZGNiZTkzZjU3Zjg4MTVfUFFiSXB1Q1o3SGRQZUNsZ2t0ZWNxVU9vYjhGNXEzOXZfVG9rZW46Ym94Y25OVlNxZmszZlJSTGJqemIxZUNaV2tiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>安装成功！</p>
+<h2 id="3-3-思考题：Linux下安装软件与Windows-x2F-macOS有什么区别？"><a href="#3-3-思考题：Linux下安装软件与Windows-x2F-macOS有什么区别？" class="headerlink" title="3.3 思考题：Linux下安装软件与Windows&#x2F;macOS有什么区别？"></a>3.3 思考题：Linux下安装软件与Windows&#x2F;macOS有什么区别？</h2><p>1、在Windows&#x2F;macOS安装软件，一般都是下载已编译好的软件安装包，下载后打开安装包内的可执行文件即可（macOS在终端下载除外）</p>
+<p>2、而在Linux下安装软件可以选择已编译的软件：安装包（如rpm、dab等）或者在线下载（如apt） 也可以直接下载源码然后自己编译运行</p>
+<p>综合来看 Windows&#x2F;macOS作为大众生活中常用的操作系统 安装软件更加傻瓜化 个人理解：如果把Windows&#x2F;macOS比作在餐厅直接购买熟食 Linux更像自己的厨房 可以自己做饭 当然也可以买熟食 而作为程序猿的我们 应该去了解“饭菜”是怎么加工成为“熟食”的 并学会加工！</p>
+<h1 id="四、网络相关"><a href="#四、网络相关" class="headerlink" title="四、网络相关"></a>四、网络相关</h1><h2 id="4-1-推荐书目：《计算机网络：自顶向下》"><a href="#4-1-推荐书目：《计算机网络：自顶向下》" class="headerlink" title="4.1 推荐书目：《计算机网络：自顶向下》"></a>4.1 推荐书目：《计算机网络：自顶向下》</h2><p>已借阅电子版 做完招新题之后有空一定深入学习</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGJmODhmZjllOGJmNmY5OWRmODM0ODk0MDg2Y2YyMTlfY0xFMzk5SFpva0hSTk14TXlvVGNMUU5adnhib2NKOFlfVG9rZW46Ym94Y25kNTVVOUNnZTZVeVp1UnBMeGZ2Q1lvXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<h2 id="4-2-思考题：OSI-七层模型（或-TCP-x2F-IP-四层模型）"><a href="#4-2-思考题：OSI-七层模型（或-TCP-x2F-IP-四层模型）" class="headerlink" title="4.2 思考题：OSI 七层模型（或 TCP&#x2F;IP 四层模型）"></a>4.2 思考题：OSI 七层模型（或 TCP&#x2F;IP 四层模型）</h2><p>TCP&#x2F;IP四层模型：</p>
+<table>
+<thead>
+<tr>
+<th>应用层</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>传输层</td>
+</tr>
+<tr>
+<td>网络层</td>
+</tr>
+<tr>
+<td>网络接口层</td>
+</tr>
+</tbody></table>
+<p>对数据的处理过程：</p>
+<table>
+<thead>
+<tr>
+<th>用户数据在应用层中会被<strong>加密</strong>、<strong>编码</strong>传输</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>经过<strong>TCP****协议</strong>封装的数据加上<strong>TCP首部</strong>，经过<strong>UDP****协议</strong>封装的数据将会加上<strong>UDP首部</strong>。</td>
+</tr>
+<tr>
+<td>经过<strong>IP协议</strong>封装加上<strong>IP首部</strong></td>
+</tr>
+<tr>
+<td>PDU被进一步封装为<strong>帧</strong>，传输媒介不同，帧的类型也不同，比如通过<strong>以太网</strong>传输的就是<strong>以太网帧</strong>，而<strong>令牌环网</strong>上传输的则是<strong>令牌环帧</strong>。以太网帧首部主要包含源MAC地址和目的MAC地址，以及帧类型。最终，帧被以<strong>比特流</strong>的形式通过物理传输介质进行传输给目的主机。</td>
+</tr>
+</tbody></table>
+<p>每一层的PDU</p>
+<table>
+<thead>
+<tr>
+<th>数据报文</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据段</td>
+</tr>
+<tr>
+<td>数据包</td>
+</tr>
+<tr>
+<td>数据帧、比特流</td>
+</tr>
+</tbody></table>
+<h2 id="4-3-思考题：简述以下协议位于-TCP-x2F-IP-参考模型的哪⼀层，并给出相应的应用和特点"><a href="#4-3-思考题：简述以下协议位于-TCP-x2F-IP-参考模型的哪⼀层，并给出相应的应用和特点" class="headerlink" title="4.3 思考题：简述以下协议位于 TCP&#x2F;IP 参考模型的哪⼀层，并给出相应的应用和特点"></a>4.3 思考题：简述以下协议位于 TCP&#x2F;IP 参考模型的哪⼀层，并给出相应的应用和特点</h2><p>协议</p>
+<table>
+<thead>
+<tr>
+<th>HTTP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TCP</td>
+</tr>
+<tr>
+<td>DNS</td>
+</tr>
+<tr>
+<td>UDP</td>
+</tr>
+<tr>
+<td>RDP</td>
+</tr>
+</tbody></table>
+<p>位于TCP&#x2F;IP模型的</p>
+<table>
+<thead>
+<tr>
+<th>应用层</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>传输层</td>
+</tr>
+<tr>
+<td>应用层</td>
+</tr>
+<tr>
+<td>传输层</td>
+</tr>
+<tr>
+<td>传输层</td>
+</tr>
+</tbody></table>
+<p>应用</p>
+<table>
+<thead>
+<tr>
+<th>HTTP协议定义Web<strong>客户端</strong>如何从Web<strong>服务器</strong>请求Web页面，以及服务器如何把Web页面传送给客户端。HTTP协议采用了<strong>请求&#x2F;响应模型</strong>。客户端向服务器发送一个<strong>请求报文</strong>，请求报文包含请求的<strong>方法、URL、协议版本、请求头部和请求数据</strong>。服务器以一个<strong>状态行</strong>作为响应，响应的内容包括<strong>协议的版本、成功或者错误代码、服务器信息、响应头部和响应数据</strong>。 在我们访问网页时随时会应用到</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TCP并<strong>不是对所有的应用都适合</strong>，一些新的带有一些内在的脆弱性的运输层协议也被设计出来。比如，实时应用并不需要甚至无法忍受TCP的可靠传输机制。在这种类型的应用中，通常允许一些丢包、出错或拥塞，而不是去校正它们。例如通常<strong>不使用TCP的应用有：流媒体、网络游戏、IP电话（VoIP）等等</strong>。任何不是很需要可靠性或者是想将功能减到最少的应用可以避免使用TCP。在很多情况下，当只<strong>需要多路复用应用服务时</strong>，用户数据报协议（UDP）可以代替TCP为应用提供服务。        除外，由于TCP的实现是<strong>由操作系统提供</strong>，而TCP的悠久历史、系统级别的配置机制，一些特性在特定的网络环境下会成为一种累赘而且无法优化，所以也有一些通过在UDP上重新实现用户层级的类似TCP的面向连接的、可靠的、基于字节流的类传输层协议，来代替TCP，例如QUIC。</td>
+</tr>
+<tr>
+<td>将域名和 IP 地址<strong>相互映射</strong>，使人更<strong>方便</strong>地访问互联网，而不用去记住能够被机器直接读取的 IP 地址数串。将域名映射成 IP 地址称为<strong>正向解析</strong>，将 IP 地址映射成域名称为<strong>反向解析</strong>。 如：<a href="http://www.baidu.com解析为182.61.200.6">www.baidu.com解析为182.61.200.6</a></td>
+</tr>
+<tr>
+<td>域名系统（DNS），其中查询阶段必须快速，并且只包含单个请求，后跟单个回复数据包；        动态主机配置协议（DHCP），用于动态分配IP地址；        简单网络管理协议（SNMP）；        路由信息协议（RIP）；        网路时间协定（NTP）。        串流媒体、线上游戏流量通常使用UDP传输。 实时视频流和音频流应用程序旨在处理偶尔丢失、错误的数据包，因此只会发生质量轻微下降，而避免了重传数据包带来的高延迟。 由于TCP和UDP都在同一网络上运行，因此一些企业发现来自这些实时应用程序的UDP流量影响了使用TCP的应用程序的性能，例如销售、会计和数据库系统。 当TCP检测到数据包丢失时，它将限制其数据速率使用率。由于实时和业务应用程序对企业都很重要，因此一些人认为开发服务质量解决方案至关重要。        某些VPN应用（如OpenVPN）使用UDP并可以在应用程序级别实现可靠连接和错误检查。</td>
+</tr>
+<tr>
+<td>Microsoft 在 Windows NT 终端服务器内实施 RDP 进行连接：        RDP 基于 T-120 系列协议标准，并且是后者的扩展。 支持多通道的协议允许单独的虚拟通道来传送以下信息：1、演示数据2、串行设备通信3、许可信息4、高度加密的数据，如键盘、鼠标活动</td>
+</tr>
+</tbody></table>
+<p>特点</p>
+<table>
+<thead>
+<tr>
+<th>1.<strong>支持客户&#x2F;服务器模式</strong>。2.<strong>简单快速</strong>3.<strong>灵活</strong>4.<strong>无连接</strong>5.<strong>无状态</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1、TCP 提供一种<strong>面向连接的、可靠的</strong>字节流服务2、在一个 TCP 连接中，仅有两方进行彼此通信。广播和多播不能用于 TCP3、TCP 使用<strong>校验和</strong>，<strong>确</strong>认和<strong>重传</strong>机制来保证可靠传输4、TCP 给数据分节进行排序，并使用累积确认保证数据的<strong>顺序不变</strong>和<strong>非重复</strong>5、TCP 使用<strong>滑动窗口机制</strong>来实现流量控制，通过动态改变窗口的大小进行拥塞控制</td>
+</tr>
+<tr>
+<td>1、每一个域名都对应一个<strong>唯一的IP地址</strong>，<strong>每一级域名的长度限制是 63</strong>，域名<strong>总长度限制是 253</strong>2、DNS命名用于Internet等TCP&#x2F;IP网络中，通过<strong>用户友好</strong>的名称查找计算机和服务。3、DNS是<strong>因特网</strong>的一项核心服务,它作为可以将域名和IP地址相互映射的一个<strong>分布式数据库</strong>，<strong>常用端口为53</strong></td>
+</tr>
+<tr>
+<td>1、UDP 是<strong>无连接</strong>的，即发送数据之前不需要建立连接(发送数据结束时也没有连接可释放)，减少了开销和发送数据之前的时延2、UDP 使用<strong>尽最大努力交付</strong>，即不保证可靠交付，主机不需要维持复杂的连接状态表3、UDP 是<strong>面向报文</strong>的，发送方的 UDP 对应用程序交下来的报文，在添加首部后就向下交付 IP 层。UDP 对应用层交下来的报文，既不合并，也不拆分，而是保留这些报文的边界4、UDP <strong>没有拥塞控制</strong>，网络出现的拥塞不会使源主机的发送速率降低。这对某些实时应用是很重要的5、UDP <strong>支持一对一、一对多、多对一和多对多的交互通信</strong>6、UDP 的<strong>首部开销小</strong>，只有8个字节，比 TCP 的20个字节的首部要短</td>
+</tr>
+<tr>
+<td>远程桌面协议是一个<strong>多通道</strong>的协议，让用户（客户端或称“本地电脑”）连上提供微软终端服务的电脑（服务端或称“远程电脑”）。大部分的Windows都有客户端软件。服务端电脑方面，则监听送到<strong>TCP</strong> <strong>3389端口</strong>的资料。</td>
+</tr>
+</tbody></table>
+<h2 id="4-4-实践题：设备配置"><a href="#4-4-实践题：设备配置" class="headerlink" title="4.4 实践题：设备配置"></a>4.4 实践题：设备配置</h2><p>⼀台普通的设备没有配置默认 IPv4 路由，如何⼿动配置令其能够访问外部⽹络</p>
+<h2 id="4-5-选作题：请简述二层交换机、三层交换机、路由器之间的区别，以及它们⼀般被部署在网络的哪些位置上"><a href="#4-5-选作题：请简述二层交换机、三层交换机、路由器之间的区别，以及它们⼀般被部署在网络的哪些位置上" class="headerlink" title="4.5 选作题：请简述二层交换机、三层交换机、路由器之间的区别，以及它们⼀般被部署在网络的哪些位置上"></a>4.5 选作题：请简述二层交换机、三层交换机、路由器之间的区别，以及它们⼀般被部署在网络的哪些位置上</h2><h3 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h3><h4 id="1、二层交换机和三层交换机的区别："><a href="#1、二层交换机和三层交换机的区别：" class="headerlink" title="1、二层交换机和三层交换机的区别："></a>1、二层交换机和三层交换机的区别：</h4><p>二层和三层交换机之间的主要区别在于<strong>是否拥有路由功能</strong>。</p>
+<p>二层交换机属<strong>数据链路层</strong>设备，可以识别数据包中的MAC地址信息，根据MAC地址进行转发，并将这些MAC地址与对应的端口记录在自己内部的一个地址表中。</p>
+<p>而三层交换机就是<strong>具有部分路由器功能的交换机</strong>，工作在OSI网络标准模型的三层：网络层，目的是<strong>加快大型局域网内部的数据交换</strong>，所具有的路由功能也是为这目的服务的，能够做到<strong>一次路由，多次转发</strong>。此外，三层交换机可以执行<strong>静态路由和动态路由</strong>。这意味着三层交换机<strong>同时具有MAC地址表和IP路由表</strong>，并且还处理VLAN内通信以及不同VLAN之间的数据包路由。仅添加静态路由的交换机称为弱三层交换机。除路由数据包外，三层交换机还包括一些功能，这些功能需要能够<strong>理解进入交换机的数据的IP地址信息</strong>，例如基于IP地址标记VLAN流量，而不是手动配置端口。三层交换机的功率和安全性得到了提高。</p>
+<ul>
+<li><h4 id="2、交换机和路由器的区别："><a href="#2、交换机和路由器的区别：" class="headerlink" title="2、交换机和路由器的区别："></a>2、交换机和路由器的区别：</h4></li>
+<li><ul>
+<li><p>交换机分为：<strong>二层交换机、三层交换机或更高层的交换机</strong>。三层交换机可以有路由的功能，而且比低端路由器的转发速率更快。  交换机的主要特点是：<strong>一次路由，多次转发</strong>。</p>
+</li>
+<li><p>路由器亦称选径器，是在<strong>网络层</strong>实现互连的设备。可以连接多个网络或网段的网络设备，包括<strong>局域网和广域网</strong>。  </p>
+</li>
+<li><p>路由器有两大典型功能，即<strong>数据通道功能和控制功能。</strong></p>
+</li>
+<li><p>路由器和交换机的主要区别  ：</p>
+</li>
+<li><p>1、<strong>工作层次不同</strong>：交换机比路由器更简单，路由器比交换器能获取更多信息  最初的的交换机是工作在OSI&#x2F;RM开放体系结构的数据链路层，也就是第二层，而路由器一开始就设计工作在OSI模型的网络层。由于交换机工作在OSI的第二层(数据链路层)，所以它的工作原理比较简单，而路由器工作在OSI的第三层(网络层)，可以得到更多的协议信息，路由器可以做出更加智能的转发决策。 </p>
+</li>
+<li><p>2、<strong>数据转发所依据的对象不同</strong>  交换机是利用物理地址或者说MAC地址来确定转发数据的目的地址。而路由器则是利用不同网络的ID号(即IP地址)来确定数据转发的地址。IP地址是在软件中实现的，描述的是设备所在的网络，有时这些第三层的地址也称为协议地址或者网络地址。MAC地址通常是硬件自带的，由网卡生产商来分配的，而且已经固化到了网卡中去，一般来说是不可更改的。而IP地址则通常由网络管理员或系统自动分配。  </p>
+</li>
+<li><p>3、<strong>传统的交换机只能分割冲突域，不能分割广播域;而路由器可以分割广播域</strong>  由交换机连接的网段仍属于同一个广播域，广播数据包会在交换机连接的所有网段上传播，在某些情况下会导致通信拥挤和安全漏洞。连接到路由器上的网段会被分配成不同的广播域，广播数据不会穿过路由器。虽然第三层以上交换机具有VLAN功能，也可以分割广播域，但是各子广播域之间是不能通信交流的，它们之间的交流仍然需要路由器。  </p>
+</li>
+<li><p>4、<strong>路由器提供了防火墙的服务</strong>  路由器仅仅转发特定地址的数据包，不传送不支持路由协议的数据包传送和未知目标网络数据包的传送，从而可以防止广播风暴。  最根本的区别是：交换机一般用于LAN-WAN的连接，交换机归于网桥，是数据链路层的设备，有些交换机也可实现第三层的交换。路由器用于WAN-WAN之间的连接，可以解决异性网络之间转发分组，作用于网络层。  相比较而言，<strong>路由器的功能比交换机要强大，但速度相对也慢，价格昂贵</strong>，第三层交换机既有交换机线速转发报文能力，又有路由器良好的控制功能，因而是大家较为理想的选择。</p>
+</li>
+<li><h3 id="位置："><a href="#位置：" class="headerlink" title="位置："></a>位置：</h3></li>
+<li><p>二层交换机在<strong>数据链路层</strong>，三层交换机和路由器在<strong>网络层</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-6-附加题：您是否搭建-x2F-维护过个人-x2F-家庭-x2F-企业的⽹络？如果有，请简述"><a href="#4-6-附加题：您是否搭建-x2F-维护过个人-x2F-家庭-x2F-企业的⽹络？如果有，请简述" class="headerlink" title="4.6 附加题：您是否搭建&#x2F;维护过个人&#x2F;家庭&#x2F;企业的⽹络？如果有，请简述"></a>4.6 附加题：您是否搭建&#x2F;维护过个人&#x2F;家庭&#x2F;企业的⽹络？如果有，请简述</h2><ul>
+<li><p>我们家的网络是我和我爸一起搭建的</p>
+</li>
+<li><ul>
+<li><p>1、远程管理</p>
+</li>
+<li><p>我们使用的是<strong>小米AX9000路由器</strong>，可以通过小米开发的<strong>米家app</strong>进行远程管理</p>
+</li>
+<li><p>2、虚拟化&#x2F;容器化部署</p>
+</li>
+<li><p>我们家只需要上网即可，没有部署家庭服务器，没有设计虚拟化或者容器化</p>
+</li>
+<li><p>3、设计&#x2F;优化网络架构</p>
+</li>
+<li><p>我们家是比较老式的房子，建造时没有设置光纤接口，但是阳台对着小区门口的配电箱，就从配电箱拉了一根光纤接到家里书房的猫。因为客厅位于整个房子的中央，路由器配置在客厅可以让整个房子的信号都比较好，就从书房拉了一根网线连接到客厅的小米无线路由器。</p>
+</li>
+<li><p>4、问题一：这两年上大学在自己房间使用电子设备比较多之后，感觉到信号不太好。</p>
+</li>
+<li><p>解决：在离我房间比较近的一个电源插口安装了一个<strong>信号放大器</strong>。</p>
+</li>
+<li><p>问题二：存储不太够</p>
+</li>
+<li><p>解决：把没用的<strong>U盘</strong>插在小米AX9000路由器上，当成网盘来用。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="五、使用Docker"><a href="#五、使用Docker" class="headerlink" title="五、使用Docker"></a>五、使用Docker</h1><h2 id="5-1-运行Docker容器"><a href="#5-1-运行Docker容器" class="headerlink" title="5.1 运行Docker容器"></a>5.1 运行Docker容器</h2><p>Docker启动mariaDB</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MmZhYTcxMjJiZDVkM2E4ZmQ2MTMzOWYyYzg3MzhkYThfTndNYm9tYlZ6dHNjYkJxcmRpV252OEN5dUpZWjRlVXpfVG9rZW46Ym94Y25XNVdxN1daRmZuczh1MkkyWjlpVzBkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>查看正在运行的Docker </p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NTI1OTkyYzg1YjVkMTY1MjIxNTllYWFkZDYyYjljN2FfUWVGZTdIYzg2dkJVYk05YmxuUEhRSWtRZFVhVXNDOEtfVG9rZW46Ym94Y25SdzJMMUduaXR4M1VMUDhpRlRoNEJmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>没有问题，已经开始运行</p>
+<ul>
+<li><h2 id="5-2-实践题：在docker中运行一个phpmyadmin容器"><a href="#5-2-实践题：在docker中运行一个phpmyadmin容器" class="headerlink" title="5.2 实践题：在docker中运行一个phpmyadmin容器"></a>5.2 实践题：在docker中运行一个phpmyadmin容器</h2></li>
+<li><ul>
+<li><h3 id="5-2-1-在docker中安装php-拉取镜像："><a href="#5-2-1-在docker中安装php-拉取镜像：" class="headerlink" title="5.2.1 在docker中安装php   拉取镜像："></a><strong>5.2.1 在docker中安装php</strong>   拉取镜像：</h3></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjcyOTg0MDBlMzQ5NjE0NGJiMTY4MThjOTAwNjhjMzJfV0V6dXFsZDNCMXloMDRuWkpqNWhsamNVcXRHbk11TDZfVG9rZW46Ym94Y25VOFRRVUJZbGFHajR3S0dFR3FXcXJlXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>检查：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MGY5NDgyMjU3YjBhMWQyZDc4MWQ2YTMwMTVkYzM4YzdfbVlNbFdqSmxXTHhyU2dIaXltMDgwWlVaV2JYNTR4M2xfVG9rZW46Ym94Y25ad0JreHBHbHJoMG16cmJjWU9JRUdkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>下载完毕</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OTI1OTI4NGYwYWQ0M2NiMzMzYWVhNTIxMjc5MTFiZmRfV1BlaTVHUk5VeDFiTE1Nd2pnWFBySXdCNTU2eG1QYWVfVG9rZW46Ym94Y25DNkQ1NWpOWml3U1NqekI2OXltZHdnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>成功安装容器</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YzBmNzdjNWQwZTBkNTFkZjEyYTAyNjM0ZTE1NGY4NGFfZ25MM0FGQjdiak5qQzBzcHJWbExhVjk5U0t4a3NhTEZfVG9rZW46Ym94Y251ZUo5cTc2MkNmVXc5VmNrU2FhZ0VoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<ul>
+<li><p>检查完毕</p>
+</li>
+<li><ul>
+<li><h3 id="5-2-2-下载mysql"><a href="#5-2-2-下载mysql" class="headerlink" title="5.2.2 下载mysql"></a><strong>5.2.2 下载mysql</strong></h3></li>
+</ul>
+</li>
+</ul>
+<p>下载最新版本</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGNjYWQxYTBhZDA3MmYyNTBhZDU4Yzc1YmI2MDIyYWZfRjFiQ3BUVHR5TVh5ZklEREYzNkpqOVRTNENtUGthemRfVG9rZW46Ym94Y25yR3hTZk9CVENvUDhyWHVLd1MzZVFoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>下载完毕，配置mysql容器</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YTYxNzExMTY3ZGI2ZWU3MmNhOGNhY2JmZDVkYjk2MzJfQ2g3TVIzTmJnMlFTNzlUVnFwR2RCQnZPSGxxelg2YTRfVG9rZW46Ym94Y24yVDg3aVRTZzNtSDZqUlg3WXh5T0JiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<h3 id="5-2-3-配置PHPadmin"><a href="#5-2-3-配置PHPadmin" class="headerlink" title="5.2.3 配置PHPadmin"></a><strong>5.2.3 配置PHPadmin</strong></h3><p>下载最新版：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NTRlOTU2YWVjYTI4MmU0NWZmMjhjZWQ2Y2E1ZmM0M2RfNWxGbVZ0T3FoSWtNZTIxRFVSU3JEMnRkZTlsQjlwcWFfVG9rZW46Ym94Y25uYm54a0RqZ2hkU3ZlWWllTmx2Z2pjXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>下载完毕</p>
+<p>将80端口映射到本机8080端口上</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGNkNzY1MDlmZGNmNTMxMWZkNjk0MjExOGM1N2QzNzBfaUxuNndmaE1FcnhBbW9WaHE3WTRldEZTcDJaaURkQWdfVG9rZW46Ym94Y242VG9uSFQzaTdSOXRkZmY5OVhnZUVmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<ul>
+<li><p>docker ps查看 成功运行！</p>
+</li>
+<li><ul>
+<li><h3 id="5-2-4-建立网络连接mysql与phpmyadmin"><a href="#5-2-4-建立网络连接mysql与phpmyadmin" class="headerlink" title="5.2.4 建立网络连接mysql与phpmyadmin"></a><strong>5.2.4 建立网络连接mysql与phpmyadmin</strong></h3></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NWNhZDY2ODJmYzkzYjU0MDkzN2Q4OWJmYzA0OGJhMDhfZGFCMnl2R0RkN0s0OXdTUEhOOEFJOGNMMExRSGswdlhfVG9rZW46Ym94Y24yQ0xxT2pDelpkTGczenoyOHN5Sk1iXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>使用浏览器访问本机8080端口：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YzMxZjU4YmI2YzdiZTM4MDc2Zjk0OGI1MzAwYmJlNzlfOEtkWlRrZWZWd3Jwb1JxWldwNkhveWI2dHpzMFAxNmVfVG9rZW46Ym94Y25jZVNvT0tkYmZoUUNrbjJlYUp2Njh5XzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>输入刚刚设置的账号密码</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NjZkZjY0YzYwZmZhMGZlNDkxOTBlZjU2ODAwZjFmYTZfdTVaQUNpemJ4WElOUXVGQWZXYVJMT21rUVZJS0pBTVVfVG9rZW46Ym94Y24zMGZZeUlxYmRwZlRFalZUWHJDMk5jXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>搞定！</p>
+<ul>
+<li><h2 id="5-3-思考题：docker与虚拟机有什么不同？"><a href="#5-3-思考题：docker与虚拟机有什么不同？" class="headerlink" title="5.3 思考题：docker与虚拟机有什么不同？"></a>5.3 思考题：docker与虚拟机有什么不同？</h2></li>
+<li><ul>
+<li><p>主要区别：</p>
+</li>
+<li><p>如下图分别是虚拟机与docker的<strong>实现框架</strong>。</p>
+</li>
+<li><p><strong>虚拟机</strong></p>
+</li>
+<li><p><strong>docker</strong></p>
+</li>
+<li></li>
+<li><p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDA5ZWRhMTllZGE1MjM4YTk1MWZmYmZkMWNmNWZkNjlfVFlVS2ZWQ2hjNE03bHZ0SW9mZldBN05wQnJleFJNZ2hfVG9rZW46Ym94Y25TRktqS29nSThWdWVHR3IwVXgyTkFiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NDNkOGVmMDg3YWViZTc1NjkyMGJmODkxYzJjNDZmYTVfZnZyWVpRd0JjM042VllJUEs4NWVKbGl5RmtOdU5uY3RfVG9rZW46Ym94Y25lSkFNVDIxUWdKdDNubU5lb3Zna0FjXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+</li>
+<li></li>
+<li><p>比较两图的差异，左图<strong>虚拟机的Guest OS层和Hypervisor层</strong>在<strong>docker中被Docker Engine层所替代</strong>。虚拟机的Guest OS即为虚拟机安装的操作系统，它是一个完整操作系统内核；虚拟机的Hypervisor层可以简单理解为一个硬件虚拟化平台，它在Host OS是以内核态的驱动存在的。</p>
+</li>
+<li><p>虚拟机实现资源隔离的方法是利用独立的OS，并利用Hypervisor虚拟化CPU、内存、IO设备等实现的。例如，为了虚拟CPU，Hypervisor会为每个虚拟的CPU创建一个数据结构，模拟CPU的全部寄存器的值，在适当的时候跟踪并修改这些值。需要指出的是在大多数情况下，虚拟机软件代码是直接跑在硬件上的，而不需要Hypervisor介入。只有在一些权限高的请求下，Guest OS需要运行内核态修改CPU的寄存器数据，Hypervisor会介入，修改并维护虚拟的CPU状态。</p>
+</li>
+<li><p>Hypervisor虚拟化内存的方法是创建一个shadow page table。正常的情况下，一个page table可以用来实现从虚拟内存到物理内存的翻译。在虚拟化的情况下，由于所谓的物理内存仍然是虚拟的，因此shadow page table就要做到：虚拟内存-&gt;虚拟的物理内存-&gt;真正的物理内存。</p>
+</li>
+<li><p>对于IO设备虚拟化，当Hypervisor接到page fault，并发现实际上虚拟的物理内存地址对应的是一个I&#x2F;O设备，Hypervisor就用软件模拟这个设备的工作情况，并返回。比如当CPU想要写磁盘时，Hypervisor就把相应的数据写到一个host OS的文件上，这个文件实际上就模拟了虚拟的磁盘。</p>
+</li>
+<li><p>对比虚拟机实现资源和环境隔离的方案，docker就显得简练很多。docker Engine可以简单看成对Linux的NameSpace、Cgroup、镜像管理文件系统操作的封装。docker并没有和虚拟机一样利用一个完全独立的Guest OS实现环境隔离，它利用的是目前Linux内核本身支持的容器方式实现资源和环境隔离。简单的说，docker利用namespace实现系统环境的隔离；利用Cgroup实现资源限制；利用镜像实现根目录环境的隔离。</p>
+</li>
+<li><p>参照原理，我们可以得出一些结论：</p>
+</li>
+<li><p>1、Docker容器提供了基于进程的<strong>隔离</strong>，而VM虚拟机提供了资源的<strong>完全隔离</strong></p>
+</li>
+<li><p>2、docker使用<strong>宿主操作系统的内核</strong>，而vm虚拟机使用<strong>独立的内核</strong></p>
+</li>
+<li><p>3、Docker的启动速度是<strong>秒级</strong>的，vm是<strong>分钟</strong>级的</p>
+</li>
+<li><p>4、Docker的<strong>集成性比</strong>VM好</p>
+</li>
+<li><p>前面的内容主要论述docker相对于虚拟机的优势，但docker也不是完美的系统。相对于虚拟机，docker还存在着以下几个缺点：</p>
+</li>
+<li><p>1**.资源隔离方面不如虚拟机<strong>，docker是利用cgroup实现资源限制的，只能限制资源消耗的最大值，而</strong>不能隔绝其他程序占用自己的资源**。</p>
+</li>
+<li><p>2.<strong>安全性问题</strong>。docker目前并不能分辨具体执行指令的用户，只要一个用户拥有执行docker的权限，那么他就可以对docker的容器进行所有操作，不管该容器是否是由该用户创建。比如A和B都拥有执行docker的权限，由于docker的server端并<strong>不会具体判断</strong>docker cline是由哪个用户发起的，A可以删除B创建的容器，存在一定的安全风险。</p>
+</li>
+<li><p>3.docker目前还在版本的快速更新中，细节功能调整比较大。一些核心模块依赖于高版本内核，存在<strong>版本兼容</strong>问题</p>
+</li>
+</ul>
+</li>
+<li><h2 id="5-4-使用Dockerfile构建镜像"><a href="#5-4-使用Dockerfile构建镜像" class="headerlink" title="5.4 使用Dockerfile构建镜像"></a>5.4 使用Dockerfile构建镜像</h2></li>
+<li><ul>
+<li>创建一个文件夹，并创建一个Dockerfile文本文件：</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MjY1YTVjNDY4ZDg0NWRkYWRkMWY0OTJhNTVhYjFkMTdfaDlQUWxrdWRKTnVOc1MzcEtlNHhBcW9VaUhxSGdsRDdfVG9rZW46Ym94Y240MGhobGxrRVRDRE5PZUE5elp3YTgyXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>在Dockerfile中写入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FROM nginx</span><br><span class="line">RUN echo &#x27;&lt;h1&gt;Hello, Docker!&lt;/h1&gt;&#x27; &gt; /usr/share/nginx/html/index.html</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<p>构建镜像：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=N2IyYzgxNzQzZjExNjE2MjczNGJlMGJjM2MyZjYwYTNfeG1zdFY4R0UxVkNCR1RyZUt6anlVVVMxOG9iTDRTRzlfVG9rZW46Ym94Y25YSHVnOUJSTFJTM3ZSTll2ZmI5RzBiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>这是我按照教程构建了一个最简单的 可以看到构建过程中按照dockerfile的指令运行</p>
+<ul>
+<li><h2 id="5-5-思考题：对于Web后端，我们为什么要使用docker？而不是直接运行？"><a href="#5-5-思考题：对于Web后端，我们为什么要使用docker？而不是直接运行？" class="headerlink" title="5.5 思考题：对于Web后端，我们为什么要使用docker？而不是直接运行？"></a>5.5 思考题：对于Web后端，我们为什么要使用docker？而不是直接运行？</h2></li>
+<li><ul>
+<li><h3 id="5-5-1-网上查到的初步结论"><a href="#5-5-1-网上查到的初步结论" class="headerlink" title="5.5.1 网上查到的初步结论"></a><strong>5.5.1 网上查到的初步结论</strong></h3></li>
+</ul>
+</li>
+</ul>
+<p>网上其实可以直接查到结论：docker是容器化的部署 所以docker会更加<strong>轻量化</strong> 带来了一些<strong>优点</strong>：</p>
+<blockquote>
+<p>1、更快的<strong>启动时间</strong>。Docker容器启动是几秒钟的事情，因为容器只是一个操作系统进程而已。带有完整操作系统的虚拟机则需要几分钟来加载。</p>
+<p>2、更快<strong>部署</strong>。不需要建立一个新的环境。使用Docker,Web开发团队只需要下载Docker镜像并在不同的服务器上运行。</p>
+<p>3、容器更易<strong>管理与扩展</strong>。因为销毁与运行容器比销毁与运行虚拟机更快。</p>
+<p>4、<strong>计算资源的更好利用</strong>，因为在一个服务器上你可以运行的容器比虚拟机要多。</p>
+<p>5、支持<strong>多种操作系统</strong>，Windows,Mac,Debian等等。</p>
+</blockquote>
+<ul>
+<li><p>但是网上直接搜到的答案终究<strong>只是结论</strong>，为了在<strong>实践</strong>中更加了解两者的区别 <strong>我在自己的Mac上尝试部署PHPadmin来与docker部署作为比较</strong></p>
+</li>
+<li><ul>
+<li><h3 id="5-5-2-配置我的PHP-apache-服务器环境"><a href="#5-5-2-配置我的PHP-apache-服务器环境" class="headerlink" title="5.5.2 配置我的PHP apache 服务器环境"></a><strong>5.5.2 配置我的PHP apache 服务器环境</strong></h3></li>
+</ul>
+</li>
+</ul>
+<p>一开始我以为PHP apache 环境在 Mac OS上都是自带的:</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MWNiZjVkM2QyNWI2MzdhNTAxOGJkNDQ4YjM5NjMzNzFfWERGNlRVWnRrMGxUQ0tUaDRXaVJSTGtnQWJTYUY3U2VfVG9rZW46Ym94Y25SSEs0Tzg1cTZEa1RXR00xRVNFRHdoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>的确，内置了apache服务</p>
+<p>所以我以为不需要另处下安装包，只需要简单配置一下PHP即可</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OGVlNjllZTg0ZGY2NmQzNzdjNDEyN2M4NmM2MzY4ZGRfVXJzSDVON2Nna2ZESUlvYkp2RUlIVk1GeDVLT2tqTllfVG9rZW46Ym94Y25vWU5VVmVhdkwwSHpmdkMzYXZ2U0doXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>我本来需要去掉这一行的注释：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">LoadModule php5_module libexec/apache2/libphp5.so</span></span><br></pre></td></tr></table></figure>
 
+<p>结果，macOS12以上版本删除了内置的PHP：：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OWE4ZDM4MWEzMzRhY2FmODY3ODg5NGUyMzA5M2YwMDFfNUIzWEtkTGpiWExFZFJTaGJIZHQ2VXk5eUx1WGRxVERfVG9rZW46Ym94Y25xdVAxRjJYR3hRSG95Rjdob1hQWHJmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>于是我需要先自己安装PHP，</p>
+<p>使用brew安装PHP：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YjIxODg3ZmQ0ZWZiZThlMTc4ODczMjE0NmZmYWZjOTJfRzdmaVRJeFhJQW1PZXp2UkpDQzZBa1hRVmhxMWQ4S2FfVG9rZW46Ym94Y25TUFNNbnBPUENkZlJLQ3FrTzdaTVRmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>安装完成。</p>
+<p>打开apache配置文件 加入：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LoadModule php7_module /opt/homebrew/opt/php@7.4/lib/httpd/modules/libphp7.so</span><br></pre></td></tr></table></figure>
+
+<p>验证配置文件是否正确：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apachectl -t</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDgxODU5MWQ5MWUzYmEwZjNjZmEzZWJkOGI1NWEyYTNfSkZRNUk3TTdDUnpydm9ZYmV2ZEpiSkJscmlLRXVXOTVfVG9rZW46Ym94Y25CNWhzTnFRalVFc0NZa0pobzlqY3pmXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>提示PHP需要添加证书签名，Google一下解决方案，添加了证书以及证书颁发机构：（我的网名就叫LockedBank哈哈哈）</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OWExMDZmMTI5NmQwYWViY2E4Yjg2NDliZTM1YjliNWNfY3dHYnFYYzdjUm9RNUIwTlZuMURJZW1rZnJxVjRKalFfVG9rZW46Ym94Y25jbUZJQU9rdTZYY0NGRlVMRm81Vm9jXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>终于：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NWU4NDA1MWExOTA0MzVlOGRkOGIzYmMwNDhiNjM0NjRfMmd1SVRRRXhpdGU5VkFsaXp3NTRBYkNuRXhFQlNmeVRfVG9rZW46Ym94Y25NS0tsZFBWR1NUOWVwOW8zNnJIdDZnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>测试一下，在&#x2F;Library&#x2F;WebServer新建index.php并写入：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="title function_ invoke__">phpinfo</span>();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>打开<a target="_blank" rel="noopener" href="http://localhost/index.php">http://localhost/index.php</a></p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDU3YTMzNjIyZGU3MDQ3NjA4MzQyMTRhYjllMjc4ZjJfQmRaRWVMTHo5eDRBZ3RPclhtU21yM1dNY29CZFd0dllfVG9rZW46Ym94Y25RYU9QVW5Fd1hHWG5qNDF1TUFnREVnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<ul>
+<li><p>​        PHP也搞定了！</p>
+</li>
+<li><ul>
+<li><p>​         （注：没有把所有状态全部截下来，只把关键过程呈现出来，比如配置apache环境变量、如何添加证书等就没有写。像添加证书要截屏就会有十多张图，但是大多数也就是确认一下默认配置，我觉得没必要截，影响阅读）</p>
+</li>
+<li><h3 id="5-5-3-安装mysql"><a href="#5-5-3-安装mysql" class="headerlink" title="5.5.3 安装mysql"></a><strong>5.5.3 安装mysql</strong></h3></li>
+<li><p>进入官网下载mysql</p>
+</li>
+<li><p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YjBkODZlY2RlNWQ2YTZjOWExOGRmY2Y5MjdiN2ZhNTFfdjRGcXlJS0ZYSFprM0llVVROYklXMGhmS3laRlRRbnFfVG9rZW46Ym94Y25uU2RMYjdtQ1FoTlJkM0Q3YkJhWWdnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+</li>
+<li><p>根据提示安装：</p>
+</li>
+<li><p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=M2Q4OTEyZjU2YTAxYTc3MzhhM2EwOTU3MjA5ODE2ZTRfWDhaSTBMNHlXdHZNU2dPQ2x1QzJiWFBNUk1xR0RJN05fVG9rZW46Ym94Y243emtDQW5idFVRTG8zck1hRXVaZzlDXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+</li>
+<li><p>安装成功！</p>
+</li>
+<li><p>终端执行：</p>
+</li>
+<li><p>&#96;&#96;&#96;Shell<br>sudo mkdir &#x2F;var&#x2F;mysql<br>sudo ln -s &#x2F;tmp&#x2F;mysql.sock &#x2F;var&#x2F;mysql&#x2F;mysql.sock</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  -  打开mysql：</span><br><span class="line"></span><br><span class="line">  - ![img](https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=OTg4YzVlNmQ2NWNhMWQ3OGJkNGJlM2IzZDc0MWJiM2VfTVBRQ0lLaDdzVHhaak9kaUFhSDRTN2lNYU9YTzQ2SVVfVG9rZW46Ym94Y250UDVrSE94T1J4M1padUtseVVFWWpkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA)</span><br><span class="line"></span><br><span class="line">  -  成功！</span><br><span class="line"></span><br><span class="line">  - ###  **5.5.4 部署PHPadmin**</span><br><span class="line"></span><br><span class="line">  -  在官网下载好PHP压缩文件并解压：</span><br><span class="line"></span><br><span class="line">![img](https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MzFiMzFjNmZhMGMxNzNkNmIzNjYxYTFiYTQyNTUzNWRfblRnYllqUDdJQjVnZ2ozeTdzSUFrVnZJTDhJdkZhYThfVG9rZW46Ym94Y25JamFab3UyV3o5Y0NXTVQ3QkhRUndnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA)</span><br><span class="line"></span><br><span class="line">将文件改名为phpmyadmin并放在/Library/WebServer/Documents/目录下</span><br><span class="line"></span><br><span class="line">![img](https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NDgzNDZjNjJmODk5MzI3YzA1YWMxZjA2YzU4NzViOTRfNXo3dDM2R1ZTcnJQR3NERGFkckY2SHQ3OXBvVlBuWGNfVG9rZW46Ym94Y25ubTJ6a29RSmFkSXZ0cXlJdmJuNVhkXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA)</span><br><span class="line"></span><br><span class="line">修改Cookie：</span><br><span class="line"></span><br><span class="line">```Shell</span><br><span class="line">cd /Library/WebServer/Documents/phpmyadmin</span><br><span class="line">cp config.sample.inc.php config.inc.php </span><br><span class="line">vim config.inc.php </span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>搞定！</p>
+</li>
+<li><ul>
+<li><h3 id="5-5-5-在自己电脑上部署PHPadmin后的思考"><a href="#5-5-5-在自己电脑上部署PHPadmin后的思考" class="headerlink" title="5.5.5 在自己电脑上部署PHPadmin后的思考"></a><strong>5.5.5 在自己电脑上部署PHPadmin后的思考</strong></h3></li>
+<li><p>这是刚刚在网上查到的：</p>
+</li>
+<li><p>1、更快的<strong>启动时间</strong>。Docker容器启动是几秒钟的事情，因为容器只是一个操作系统进程而已。带有完整操作系统的虚拟机则需要几分钟来加载。</p>
+</li>
+<li><p>2、更快<strong>部署</strong>。不需要建立一个新的环境。使用Docker,Web开发团队只需要下载Docker镜像并在不同的服务器上运行。</p>
+</li>
+<li><p>3、容器更易<strong>管理与扩展</strong>。因为销毁与运行容器比销毁与运行虚拟机更快。</p>
+</li>
+<li><p>4、<strong>计算资源的更好利用</strong>，因为在一个服务器上你可以运行的容器比虚拟机要多。</p>
+</li>
+<li><p>5、支持<strong>多种操作系统</strong>，Windows,Mac,Debian等等。</p>
+</li>
+<li><p>我在自己的电脑上部署完成之后，感受：</p>
+</li>
+<li><p>1、启动时间没有太大区别，因为我用的是本机，没用虚拟机</p>
+</li>
+<li><p>2、部署的确<strong>简单的多</strong>，不需要那么多的环境配置，省时省力</p>
+</li>
+<li><p>3、管理确实很方便，在docker软件里甚至可以直接在<strong>可视化窗口增删服务</strong></p>
+</li>
+<li><p>4、由于可以自行设定资源分配，确实可以运行更多的服务</p>
+</li>
+<li><p>5、我自己设置时就因为证书、PHP在新版本Mac被删除的问题困扰，所以docker支持多种操作系统真的带来了<strong>很多便捷</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="六、使用GitLab-CI-x2F-CD"><a href="#六、使用GitLab-CI-x2F-CD" class="headerlink" title="六、使用GitLab CI&#x2F;CD"></a>六、使用GitLab CI&#x2F;CD</h1><h2 id="6-1-了解Git"><a href="#6-1-了解Git" class="headerlink" title="6.1 了解Git"></a>6.1 了解Git</h2><p>新建一个git仓库：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjJmN2NlNTVhMTE3ZDNjZDgzMjY2ZDAzZTY2M2UyOWZfZ2JWdHJlYTRHMGFwUm11Vk1MM0V0YW8zNFBOVnVFWEZfVG9rZW46Ym94Y25hWlZ3RVpkeVZBdVJod21ua2pNREJoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>新建一个文本文件 并添加提交到仓库：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NjM2YjU3OTk5Y2M3NDVmZTA2ODNhYTM2NWRkOTI4NWZfOEpvbk9HcHdsTzliaVR2OGdrRDEwVGp1M0JkZFVTWWlfVG9rZW46Ym94Y25xQ3ROTE1FUmxXUG44bTk5VG8zNDllXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>用我的GitHub建立仓库：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MjFmNjJjZjA3Yjk2OTAyMThjYjE5Y2QwNTM4NDk3MWZfNm5iWnIzZlNOdzBvNmdRT1d0R1RhcVdhczJGWnM5OTBfVG9rZW46Ym94Y25sNjc3OUJtYVptc0NxTVY4VU83WHBnXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>将本地分支推送到远程分支：</p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NWJiNWMxNzk3OGFiNzNmNGM4ZmE5ODU0MDUxNWRhNjhfcFZuNXJrdEpFWXNOSk1rSXg5Yml6WDhUQ29YZm5Fa1pfVG9rZW46Ym94Y24ySEIxNDNPenN5dk9nNUpqNkgzdGdiXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p><img src="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=M2RlNWQxMGUyMjRlYmM5NmY5M2YzNzUwZDMyMGQxYTRfcnVlbUF6dFMxY09KVlBtRnFnbTlGUmNVQ3lIYU1zUldfVG9rZW46Ym94Y25aREVlcWcya3F5OWZ2VlhiWEZiQUVoXzE2Njk1NTQ4MDg6MTY2OTU1ODQwOF9WNA" alt="img"></p>
+<p>推送完成</p>
+<h2 id="6-2-正式开始"><a href="#6-2-正式开始" class="headerlink" title="6.2 正式开始"></a>6.2 正式开始</h2><p>务必参考<a target="_blank" rel="noopener" href="https://docs.gitlab.com/ee/ci/">GitLab官方文档</a>。</p>
+<p>工作室使用自建的GitLab进行代码托管和持续集成，但是在你正式加入星辰工作室之前应该无法在我们自建的GitLab上注册账号，不过，你仍然可以使用<a target="_blank" rel="noopener" href="https://gitlab.com/explore">GitLab官方那个</a>进行接下来的操作。</p>
+<p>为了使用GitLab CI&#x2F;CD，你首先需要创建一个代码仓库（在GitLab中叫做Project），然后在仓库中添加<code>.gitlab-ci.yml</code>即可，通过配置该文件实现CI&#x2F;CD。关于如何编写<code>.gitlab-ci.yml</code>，可以参考<a target="_blank" rel="noopener" href="https://docs.gitlab.com/ee/ci/quick_start/#create-a-gitlab-ciyml-file">官方文档</a>。</p>
+<p>为了实现项目的实际部署，你可能需要使用自己的Runner，我们建议使用Docker部署Runner，关于如何在Docker中运行Runner，可以参考<a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/">官方文档</a>。</p>
+<h2 id="6-3-实践题：使用GitLab-CI-x2F-CD功能，实现Docker镜像自动发布"><a href="#6-3-实践题：使用GitLab-CI-x2F-CD功能，实现Docker镜像自动发布" class="headerlink" title="6.3 实践题：使用GitLab CI&#x2F;CD功能，实现Docker镜像自动发布"></a>6.3 实践题：使用GitLab CI&#x2F;CD功能，实现Docker镜像自动发布</h2><p>在上一步中我们完成了Dockerfile的编写，并把镜像推送到Docker Hub，但是在实际的项目中，经常需要更改代码后重新构建和发布，请尝试为其实现自动流程。</p>
+<p>提示1：在Docker容器中使用docker cli可以使用<code>docker:dind</code>镜像，并将<code>/var/run/docker.sock</code>挂载到容器内。</p>
+<p>提示2：GitLab官方的Runner可能并不允许挂载<code>/var/run/docker.sock</code>，所以你可能需要运行一个自己的Runner。</p>
+<h2 id="6-4-思考题：在上一步中，只是使用GitLab-CI-x2F-CD将镜像发布到Docker-Hub，但是如何将Docker镜像实际在服务器上运行？"><a href="#6-4-思考题：在上一步中，只是使用GitLab-CI-x2F-CD将镜像发布到Docker-Hub，但是如何将Docker镜像实际在服务器上运行？" class="headerlink" title="6.4 思考题：在上一步中，只是使用GitLab CI&#x2F;CD将镜像发布到Docker Hub，但是如何将Docker镜像实际在服务器上运行？"></a>6.4 思考题：在上一步中，只是使用GitLab CI&#x2F;CD将镜像发布到Docker Hub，但是如何将Docker镜像实际在服务器上运行？</h2><h2 id="6-5-实践题：来搭建一个博客吧"><a href="#6-5-实践题：来搭建一个博客吧" class="headerlink" title="6.5 实践题：来搭建一个博客吧"></a>6.5 实践题：来搭建一个博客吧</h2><p>在学习和工作中进行总结归纳是一个好习惯，博客不但能记录，又能让其他人进行参考和讨论。</p>
+<p>我们推荐使用<a target="_blank" rel="noopener" href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>或<a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>，它是一个静态页托管服务，你可在链接中了解更多。</p>
+<p>我们推荐使用Markdown书写，然后用GitLab CI&#x2F;CD运行Hexo或其他静态生成器，并发布到Pages，或者其他某些容器服务上。</p>
+<p>你可以参考（上上个）<a target="_blank" rel="noopener" href="https://blog.ch34k.xyz/">出题人的博客</a>，这个博客基于Hexo和GitHub Pages。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://lockedbank.github.io/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/11/23/Mac-%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" class="archive-article-date">
-  	<time datetime="2022-11-23T02:03:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-11-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2022/11/23/Mac-%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mac 平台下科学上网</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/11/23/Mac-%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">Mac 平台下科学上网</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text">一、写在前面</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%A7%9F%E5%80%9F"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 服务器租借</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-Linux%E5%AD%A6%E4%B9%A0%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 Linux学习方式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%85%A5%E9%97%A8"><span class="toc-number">2.</span> <span class="toc-text">二、命令行入门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E6%80%9D%E8%80%83%E9%A2%98%EF%BC%9A%E4%B8%8E%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E7%9B%B8%E6%AF%94%EF%BC%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E5%8A%BF%EF%BC%9F"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 思考题：与图形界面相比，命令行有什么优势？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">三、安装软件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E4%BB%A5%E5%AE%89%E8%A3%85nginx%E4%B8%BA%E4%BE%8B"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 以安装nginx为例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E5%AE%9E%E8%B7%B5%E9%A2%98%EF%BC%9A%E5%9C%A8%E4%BD%A0%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%8A%E5%AE%89%E8%A3%85docker"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 实践题：在你的操作系统上安装docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E6%80%9D%E8%80%83%E9%A2%98%EF%BC%9ALinux%E4%B8%8B%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E4%B8%8EWindows-x2F-macOS%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 思考题：Linux下安装软件与Windows&#x2F;macOS有什么区别？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3"><span class="toc-number">4.</span> <span class="toc-text">四、网络相关</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%9B%AE%EF%BC%9A%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E3%80%8B"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 推荐书目：《计算机网络：自顶向下》</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E6%80%9D%E8%80%83%E9%A2%98%EF%BC%9AOSI-%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%EF%BC%88%E6%88%96-TCP-x2F-IP-%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 思考题：OSI 七层模型（或 TCP&#x2F;IP 四层模型）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E6%80%9D%E8%80%83%E9%A2%98%EF%BC%9A%E7%AE%80%E8%BF%B0%E4%BB%A5%E4%B8%8B%E5%8D%8F%E8%AE%AE%E4%BD%8D%E4%BA%8E-TCP-x2F-IP-%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%93%AA%E2%BC%80%E5%B1%82%EF%BC%8C%E5%B9%B6%E7%BB%99%E5%87%BA%E7%9B%B8%E5%BA%94%E7%9A%84%E5%BA%94%E7%94%A8%E5%92%8C%E7%89%B9%E7%82%B9"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 思考题：简述以下协议位于 TCP&#x2F;IP 参考模型的哪⼀层，并给出相应的应用和特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-%E5%AE%9E%E8%B7%B5%E9%A2%98%EF%BC%9A%E8%AE%BE%E5%A4%87%E9%85%8D%E7%BD%AE"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 实践题：设备配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-5-%E9%80%89%E4%BD%9C%E9%A2%98%EF%BC%9A%E8%AF%B7%E7%AE%80%E8%BF%B0%E4%BA%8C%E5%B1%82%E4%BA%A4%E6%8D%A2%E6%9C%BA%E3%80%81%E4%B8%89%E5%B1%82%E4%BA%A4%E6%8D%A2%E6%9C%BA%E3%80%81%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%AE%83%E4%BB%AC%E2%BC%80%E8%88%AC%E8%A2%AB%E9%83%A8%E7%BD%B2%E5%9C%A8%E7%BD%91%E7%BB%9C%E7%9A%84%E5%93%AA%E4%BA%9B%E4%BD%8D%E7%BD%AE%E4%B8%8A"><span class="toc-number">4.5.</span> <span class="toc-text">4.5 选作题：请简述二层交换机、三层交换机、路由器之间的区别，以及它们⼀般被部署在网络的哪些位置上</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">4.5.1.</span> <span class="toc-text">区别：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E4%BA%8C%E5%B1%82%E4%BA%A4%E6%8D%A2%E6%9C%BA%E5%92%8C%E4%B8%89%E5%B1%82%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">4.5.1.1.</span> <span class="toc-text">1、二层交换机和三层交换机的区别：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%BA%A4%E6%8D%A2%E6%9C%BA%E5%92%8C%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">4.5.1.2.</span> <span class="toc-text">2、交换机和路由器的区别：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E7%BD%AE%EF%BC%9A"><span class="toc-number">4.5.2.</span> <span class="toc-text">位置：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-6-%E9%99%84%E5%8A%A0%E9%A2%98%EF%BC%9A%E6%82%A8%E6%98%AF%E5%90%A6%E6%90%AD%E5%BB%BA-x2F-%E7%BB%B4%E6%8A%A4%E8%BF%87%E4%B8%AA%E4%BA%BA-x2F-%E5%AE%B6%E5%BA%AD-x2F-%E4%BC%81%E4%B8%9A%E7%9A%84%E2%BD%B9%E7%BB%9C%EF%BC%9F%E5%A6%82%E6%9E%9C%E6%9C%89%EF%BC%8C%E8%AF%B7%E7%AE%80%E8%BF%B0"><span class="toc-number">4.6.</span> <span class="toc-text">4.6 附加题：您是否搭建&#x2F;维护过个人&#x2F;家庭&#x2F;企业的⽹络？如果有，请简述</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E4%BD%BF%E7%94%A8Docker"><span class="toc-number">5.</span> <span class="toc-text">五、使用Docker</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-1-%E8%BF%90%E8%A1%8CDocker%E5%AE%B9%E5%99%A8"><span class="toc-number">5.1.</span> <span class="toc-text">5.1 运行Docker容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-2-%E5%AE%9E%E8%B7%B5%E9%A2%98%EF%BC%9A%E5%9C%A8docker%E4%B8%AD%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AAphpmyadmin%E5%AE%B9%E5%99%A8"><span class="toc-number">5.2.</span> <span class="toc-text">5.2 实践题：在docker中运行一个phpmyadmin容器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-1-%E5%9C%A8docker%E4%B8%AD%E5%AE%89%E8%A3%85php-%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%EF%BC%9A"><span class="toc-number">5.2.1.</span> <span class="toc-text">5.2.1 在docker中安装php   拉取镜像：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-2-%E4%B8%8B%E8%BD%BDmysql"><span class="toc-number">5.2.2.</span> <span class="toc-text">5.2.2 下载mysql</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-3-%E9%85%8D%E7%BD%AEPHPadmin"><span class="toc-number">5.2.3.</span> <span class="toc-text">5.2.3 配置PHPadmin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-4-%E5%BB%BA%E7%AB%8B%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5mysql%E4%B8%8Ephpmyadmin"><span class="toc-number">5.2.4.</span> <span class="toc-text">5.2.4 建立网络连接mysql与phpmyadmin</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-3-%E6%80%9D%E8%80%83%E9%A2%98%EF%BC%9Adocker%E4%B8%8E%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F"><span class="toc-number">5.3.</span> <span class="toc-text">5.3 思考题：docker与虚拟机有什么不同？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-4-%E4%BD%BF%E7%94%A8Dockerfile%E6%9E%84%E5%BB%BA%E9%95%9C%E5%83%8F"><span class="toc-number">5.4.</span> <span class="toc-text">5.4 使用Dockerfile构建镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-5-%E6%80%9D%E8%80%83%E9%A2%98%EF%BC%9A%E5%AF%B9%E4%BA%8EWeb%E5%90%8E%E7%AB%AF%EF%BC%8C%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8docker%EF%BC%9F%E8%80%8C%E4%B8%8D%E6%98%AF%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8C%EF%BC%9F"><span class="toc-number">5.5.</span> <span class="toc-text">5.5 思考题：对于Web后端，我们为什么要使用docker？而不是直接运行？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-1-%E7%BD%91%E4%B8%8A%E6%9F%A5%E5%88%B0%E7%9A%84%E5%88%9D%E6%AD%A5%E7%BB%93%E8%AE%BA"><span class="toc-number">5.5.1.</span> <span class="toc-text">5.5.1 网上查到的初步结论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-2-%E9%85%8D%E7%BD%AE%E6%88%91%E7%9A%84PHP-apache-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83"><span class="toc-number">5.5.2.</span> <span class="toc-text">5.5.2 配置我的PHP apache 服务器环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-3-%E5%AE%89%E8%A3%85mysql"><span class="toc-number">5.5.3.</span> <span class="toc-text">5.5.3 安装mysql</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-5-%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%94%B5%E8%84%91%E4%B8%8A%E9%83%A8%E7%BD%B2PHPadmin%E5%90%8E%E7%9A%84%E6%80%9D%E8%80%83"><span class="toc-number">5.5.4.</span> <span class="toc-text">5.5.5 在自己电脑上部署PHPadmin后的思考</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E4%BD%BF%E7%94%A8GitLab-CI-x2F-CD"><span class="toc-number">6.</span> <span class="toc-text">六、使用GitLab CI&#x2F;CD</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#6-1-%E4%BA%86%E8%A7%A3Git"><span class="toc-number">6.1.</span> <span class="toc-text">6.1 了解Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-2-%E6%AD%A3%E5%BC%8F%E5%BC%80%E5%A7%8B"><span class="toc-number">6.2.</span> <span class="toc-text">6.2 正式开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-3-%E5%AE%9E%E8%B7%B5%E9%A2%98%EF%BC%9A%E4%BD%BF%E7%94%A8GitLab-CI-x2F-CD%E5%8A%9F%E8%83%BD%EF%BC%8C%E5%AE%9E%E7%8E%B0Docker%E9%95%9C%E5%83%8F%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83"><span class="toc-number">6.3.</span> <span class="toc-text">6.3 实践题：使用GitLab CI&#x2F;CD功能，实现Docker镜像自动发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-4-%E6%80%9D%E8%80%83%E9%A2%98%EF%BC%9A%E5%9C%A8%E4%B8%8A%E4%B8%80%E6%AD%A5%E4%B8%AD%EF%BC%8C%E5%8F%AA%E6%98%AF%E4%BD%BF%E7%94%A8GitLab-CI-x2F-CD%E5%B0%86%E9%95%9C%E5%83%8F%E5%8F%91%E5%B8%83%E5%88%B0Docker-Hub%EF%BC%8C%E4%BD%86%E6%98%AF%E5%A6%82%E4%BD%95%E5%B0%86Docker%E9%95%9C%E5%83%8F%E5%AE%9E%E9%99%85%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E8%BF%90%E8%A1%8C%EF%BC%9F"><span class="toc-number">6.4.</span> <span class="toc-text">6.4 思考题：在上一步中，只是使用GitLab CI&#x2F;CD将镜像发布到Docker Hub，但是如何将Docker镜像实际在服务器上运行？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-5-%E5%AE%9E%E8%B7%B5%E9%A2%98%EF%BC%9A%E6%9D%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E5%90%A7"><span class="toc-number">6.5.</span> <span class="toc-text">6.5 实践题：来搭建一个博客吧</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/09/11/LockedBank's%20Blog/" class="archive-article-date">
-  	<time datetime="2022-09-11T07:23:48.649Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-11</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/09/11/LockedBank's%20Blog/">Welcome to LockedBank&#39;s Blog!</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -269,8 +859,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
