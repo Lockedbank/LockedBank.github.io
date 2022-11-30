@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"lockedbank.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="title: 星辰工作室Devops招新笔试题解答 date: 2022-11-28 10:03:48 By：李佳杭 tags:  没来得及把所有图片上传到我的GitHub图床 我的电脑是搭建博客的服务器 没有全天开着 后面有时间再传（tip1：为了体现我在作答招新题过程中的思考 我的解答包含了题目解答以及对题目文档的注解和一些回答 并为了方便阅读 我的标题与招新文档标题一一对应 tip2:由于我">
+    <meta name="description" content="没来得及把所有图片上传到我的GitHub图床 我的电脑是搭建博客的服务器 没有全天开着 后面有时间再传（tip1：为了体现我在作答招新题过程中的思考 我的解答包含了题目解答以及对题目文档的注解和一些回答 并为了方便阅读 我的标题与招新文档标题一一对应 tip2:由于我是使用电脑编写的解答，没有考虑到手机上查看分列会显示不下，所以可能在手机上阅读时会发生格式错乱，带来不便请谅解 ） 一、写在前面1.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LockedBank&#39;s Blog">
-<meta property="og:url" content="https://lockedbank.github.io/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/index.html">
+<meta property="og:title" content="星辰工作室Devops招新笔试题解答">
+<meta property="og:url" content="https://lockedbank.github.io/2022/11/28/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/index.html">
 <meta property="og:site_name" content="LockedBank&#39;s Blog">
-<meta property="og:description" content="title: 星辰工作室Devops招新笔试题解答 date: 2022-11-28 10:03:48 By：李佳杭 tags:  没来得及把所有图片上传到我的GitHub图床 我的电脑是搭建博客的服务器 没有全天开着 后面有时间再传（tip1：为了体现我在作答招新题过程中的思考 我的解答包含了题目解答以及对题目文档的注解和一些回答 并为了方便阅读 我的标题与招新文档标题一一对应 tip2:由于我">
+<meta property="og:description" content="没来得及把所有图片上传到我的GitHub图床 我的电脑是搭建博客的服务器 没有全天开着 后面有时间再传（tip1：为了体现我在作答招新题过程中的思考 我的解答包含了题目解答以及对题目文档的注解和一些回答 并为了方便阅读 我的标题与招新文档标题一一对应 tip2:由于我是使用电脑编写的解答，没有考虑到手机上查看分列会显示不下，所以可能在手机上阅读时会发生格式错乱，带来不便请谅解 ） 一、写在前面1.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/Lockedbank/image-cloud-bed/blob/main/1280X1280.PNG?raw=true">
 <meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=MTVmM2E0YjA3ZGY2YjZjNjAzMjk2YzRlZWVkNzM3ODBfcFhFTWtLS0gyM0p3RGJFN0ttZjFCTEpZRWx4cE9xTFdfVG9rZW46Ym94Y25XVjhTVlRpZlN1TFFRTnpWQnBJRXhoXzE2Njk3NzYxNjI6MTY2OTc3OTc2Ml9WNA">
@@ -72,21 +72,21 @@
 <meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2JjMDFlOTdiMzA1ODU3M2Y3ZjI3MjBlYTU4NGMwMGVfWHFnR2ZjY0lOa0tJNGQ3RjNBVVJ1UWJObFpnM2JHY0VfVG9rZW46Ym94Y240QzJraGVYT0dXak9qV3BETk5FdnVjXzE2Njk3NzYxNjI6MTY2OTc3OTc2Ml9WNA">
 <meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=YTU5ZjNmOTNmMDk3NzdiYWUyZWRmZDEzYzYzNjBlMmNfemZHZk02TEdRb0I3aG1ISnVYWGh4VG9CREVyN2NuUEtfVG9rZW46Ym94Y25wc1I3VVJ5MURNNVlPQzhKVmZlUktIXzE2Njk3NzYxNjI6MTY2OTc3OTc2Ml9WNA">
 <meta property="og:image" content="https://uestc.feishu.cn/space/api/box/stream/download/asynccode/?code=NGJlYzI0NTMyNTAyMGRhZGJkNzdkY2ExZGRjZDE4NmNfTlo0MFBQUGhUM2R4NkdhY2ZNcXlVaXlkeGlRV3BSZ0NfVG9rZW46Ym94Y25qNDg0emZzUVBLb2N5V1BnajdMV1hiXzE2Njk3NzYxNjI6MTY2OTc3OTc2Ml9WNA">
-<meta property="article:published_time" content="2022-11-27T13:15:47.373Z">
-<meta property="article:modified_time" content="2022-11-30T03:27:01.690Z">
+<meta property="article:published_time" content="2022-11-28T02:05:01.000Z">
+<meta property="article:modified_time" content="2022-11-30T03:33:59.265Z">
 <meta property="article:author" content="LockedBank">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/Lockedbank/image-cloud-bed/blob/main/1280X1280.PNG?raw=true">
 
 
-<link rel="canonical" href="https://lockedbank.github.io/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/">
+<link rel="canonical" href="https://lockedbank.github.io/2022/11/28/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://lockedbank.github.io/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/","path":"2022/11/27/星辰工作室Devops招新笔试题解答/","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://lockedbank.github.io/2022/11/28/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/","path":"2022/11/28/星辰工作室Devops招新笔试题解答/","title":"星辰工作室Devops招新笔试题解答"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | LockedBank's Blog</title>
+<title>星辰工作室Devops招新笔试题解答 | LockedBank's Blog</title>
   
 
 
@@ -194,7 +194,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://lockedbank.github.io/2022/11/27/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/">
+    <link itemprop="mainEntityOfPage" href="https://lockedbank.github.io/2022/11/28/%E6%98%9F%E8%BE%B0%E5%B7%A5%E4%BD%9C%E5%AE%A4Devops%E6%8B%9B%E6%96%B0%E7%AC%94%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -207,12 +207,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | LockedBank's Blog">
+      <meta itemprop="name" content="星辰工作室Devops招新笔试题解答 | LockedBank's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          星辰工作室Devops招新笔试题解答
         </h1>
 
         <div class="post-meta-container">
@@ -223,14 +223,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2022-11-27 21:15:47" itemprop="dateCreated datePublished" datetime="2022-11-27T21:15:47+08:00">2022-11-27</time>
+      <time title="创建时间：2022-11-28 10:05:01" itemprop="dateCreated datePublished" datetime="2022-11-28T10:05:01+08:00">2022-11-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-11-30 11:27:01" itemprop="dateModified" datetime="2022-11-30T11:27:01+08:00">2022-11-30</time>
+      <time title="修改时间：2022-11-30 11:33:59" itemprop="dateModified" datetime="2022-11-30T11:33:59+08:00">2022-11-30</time>
     </span>
 
   
@@ -243,12 +243,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <pre><code>title: 星辰工作室Devops招新笔试题解答
-date: 2022-11-28 10:03:48
-By：李佳杭
-tags:
-</code></pre>
-<h1 id="没来得及把所有图片上传到我的GitHub图床-我的电脑是搭建博客的服务器-没有全天开着-后面有时间再传"><a href="#没来得及把所有图片上传到我的GitHub图床-我的电脑是搭建博客的服务器-没有全天开着-后面有时间再传" class="headerlink" title="没来得及把所有图片上传到我的GitHub图床 我的电脑是搭建博客的服务器 没有全天开着 后面有时间再传"></a>没来得及把所有图片上传到我的GitHub图床 我的电脑是搭建博客的服务器 没有全天开着 后面有时间再传</h1><p>（tip1：为了体现我在作答招新题过程中的思考 我的解答包含了<strong>题目解答</strong>以及对题目文档的<strong>注解</strong>和一些<strong>回答</strong> 并为了方便阅读 <strong>我的标题与招新文档标题一一对应</strong></p>
+        <h1 id="没来得及把所有图片上传到我的GitHub图床-我的电脑是搭建博客的服务器-没有全天开着-后面有时间再传"><a href="#没来得及把所有图片上传到我的GitHub图床-我的电脑是搭建博客的服务器-没有全天开着-后面有时间再传" class="headerlink" title="没来得及把所有图片上传到我的GitHub图床 我的电脑是搭建博客的服务器 没有全天开着 后面有时间再传"></a>没来得及把所有图片上传到我的GitHub图床 我的电脑是搭建博客的服务器 没有全天开着 后面有时间再传</h1><p>（tip1：为了体现我在作答招新题过程中的思考 我的解答包含了<strong>题目解答</strong>以及对题目文档的<strong>注解</strong>和一些<strong>回答</strong> 并为了方便阅读 <strong>我的标题与招新文档标题一一对应</strong></p>
 <p>tip2:由于我是使用电脑编写的解答，没有考虑到手机上查看<strong>分列会显示不下</strong>，所以可能在手机上阅读时会发生格式错乱，带来不便请谅解 ）</p>
 <h1 id="一、写在前面"><a href="#一、写在前面" class="headerlink" title="一、写在前面"></a>一、写在前面</h1><h2 id="1-1-服务器租借"><a href="#1-1-服务器租借" class="headerlink" title="1.1 服务器租借"></a>1.1 服务器租借</h2><p>之前在搬瓦工租（出）借（血）了一个一年期的VPS 安装了Debian 配置了V2Ray拿来科学上网9月份被墙了之后换了一个IP并开了流量伪装 现在准备就拿来科学上网  后面计划租一个腾讯云的学生服务器来学习相关知识</p>
 <p><img src="https://github.com/Lockedbank/image-cloud-bed/blob/main/1280X1280.PNG?raw=true" alt="img"></p>
